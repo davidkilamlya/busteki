@@ -1,0 +1,44 @@
+.Service {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: max-content;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  width: 100%;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.card_holder {
+  width: 100%;
+
+  border-radius: 5px;
+
+  background: linear-gradient(
+    to right bottom,
+    #031544,
+    #1c3ca1,
+    #5b4c97,
+    #1c3ca1,
+    #031544,
+   
+  );
+  // background-image:url("../../Assets/World\ Map.svg") ;
+  background-repeat: no-repeat;
+  // background-position-x: center;
+
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+
+  @media screen and (max-width: 990px) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    // padding: 10px;
+  }
+}

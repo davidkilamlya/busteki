@@ -1,0 +1,72 @@
+.service-projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-service-projects-container {
+  padding: 40px;
+}
+.services {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+   @media screen and (max-width:900px) {
+     width: 100%;
+     padding: 10px;
+  }
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+//   padding: 40px;
+}
+.service-image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+}
+.service-image-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.service-title{
+    height: 30%;
+}
+.service-description{
+    height: 40%;
+}
+.service-description-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+// .sevice-title-p{
+//     // font-size: medium;
+//     color: #0d1b46;
+// }
+.card-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  gap: 30px;
+  padding-top: 80px;
+  @media screen and (max-width:900px) {
+     width: 100%;
+  }
+}

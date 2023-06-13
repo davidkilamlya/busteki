@@ -5,7 +5,15 @@ import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
 
 export const NavBar = () => {
-  const navList = ["About us", "services", "Work", "Testimonial", "Contact us"];
+  const navList = [
+    "About us",
+    "services",
+    "Work",
+    "update",
+    "Testimonial",
+    "team",
+    "Contact us",
+  ];
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="NavBar">
@@ -28,9 +36,9 @@ export const NavBar = () => {
             <motion.div
               whileInView={{ x: [300, 0] }}
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1, x:[0,100,0,100,0]}}
+              animate={{ opacity: 1, x: [0, 100, 0, 100, 0] }}
               transition={{ duration: 0.85, ease: "backInOut" }}
-              exit={{opacity:0}}
+              exit={{ opacity: 0 }}
             >
               <HiX onClick={() => setToggle(false)} />
               <ul>

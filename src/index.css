@@ -3,15 +3,29 @@
 
   --primary-color: #edf2f8;
   --secondary-color: #13104c;
+  --subsidiary-color:#A41E22;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
+  --border-color:#F1F3F8;
+  --action-color:#10497E;
+  --additionalBackground--color:#EDF2F8;
+  --additionalBackgroundRed--color:#EC5252;
 }
 *{
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Abril Fatface', cursive; */
+/* font-family: 'Andika', sans-serif; */
+/* font-family: 'Abril Fatface', cursive;
+ */
+ /* font-family: 'Merriweather', serif; */
+ font-family: 'Alegreya Sans', sans-serif;
+/* font-family: 'Arvo', serif; */
+  /* font-family: 'Abril Fatface', cursive; */
 }

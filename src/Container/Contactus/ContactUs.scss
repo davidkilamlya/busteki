@@ -1,0 +1,140 @@
+.contactUs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   flex-direction: column;
+  padding: 90px;
+  @media screen and (max-width: 890px) {
+    display: flex;
+    padding: 30px;
+    // flex-direction: column;
+  }
+}
+.contact-form-title {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: #fff;
+
+  height: 100%;
+}
+.contact-form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  //   justify-content: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+  gap: 20px;
+  @media screen and (max-width: 890px) {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.contact-image-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #efefef;
+  height: 100%;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.contact-image {
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.svg-image {
+  width: 50%;
+  object-fit: cover;
+  height: 50%;
+  flex: 0.5;
+}
+.contact-description {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 28px;
+  //   background-color: #fefe;
+}
+.pContact-description {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.contact-container {
+  display: flex;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #6c68ff;
+}
+.contactus-form-title {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid;
+
+  border: 2px solid var(--border-color);
+  @media screen and (max-width: 890px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.input {
+  padding: 10px 20px 10px 20px;
+  height: 100%;
+
+  font-weight: 500;
+  background-color: #efefef;
+
+  outline: none;
+  border: none;
+  width: 100%;
+
+  @media screen and (max-width: 890px) {
+    width: 100%;
+  }
+}
+
+.contact-submit {
+  color: #fff !important;
+
+  @media screen and (max-width: 890px) {
+    width: 100%;
+  }
+}
+
+.contact-title {
+  font-size: 10px !important;
+}
+.contact-btn {
+  // padding: 10px 0;
+  @media screen and (max-width: 890px) {
+    width: 100%;
+    padding: 0 35px 10px 35px;
+  }
+}
