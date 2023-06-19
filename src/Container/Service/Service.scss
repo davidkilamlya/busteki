@@ -15,15 +15,16 @@
 
   border-radius: 5px;
 
-  background: linear-gradient(
-    to right bottom,
-    #031544,
-    #1c3ca1,
-    #5b4c97,
-    #1c3ca1,
-    #031544,
+  // background: linear-gradient(
+  //   to right bottom,
+  //   #031544,
+  //   #1c3ca1,
+  //   #5b4c97,
+  //   #1c3ca1,
+  //   #031544,
    
-  );
+  // );
+  background-color: var(--border-color);
   // background-image:url("../../Assets/World\ Map.svg") ;
   background-repeat: no-repeat;
   // background-position-x: center;

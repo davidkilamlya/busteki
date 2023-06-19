@@ -1,0 +1,42 @@
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  gap: 40px;
+}
+.notfound-logo,
+.notfound-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notfound-image{
+    animation-name: example;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+//     @keyframes example {
+    
+ 
+//   0%  {background-color:var(--secondary-color); left:200px;}
+//   100%  {background-color:#fff; left:0px;}
+  
+// }
+}
+
+
+
+.notfound-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+
+}
+

@@ -107,7 +107,7 @@ function Work() {
           ))}
         </div>
         <div className="arrow" onClick={()=>{updateXDimension("left")}}>
-          {" "}
+         
           <IoIosArrowForward />
         </div>
       </div>

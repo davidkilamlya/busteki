@@ -6,12 +6,13 @@ import "./Aboutus.scss";
 import Title from "../Title/Title";
 import SinglepagePath from "../Singlepage/SinglepagePath";
 import Team from "../../Container/Team/Team";
+import { Link } from "react-router-dom";
 
 function Aboutus() {
   return (
     <div className="aboutus">
       {/* <NavBar /> */}
-      <SinglepagePath />
+     <SinglepagePath />
       <div className="about-main">
         <Title title={"Busteki/About us"} visible />
         <div className="details">

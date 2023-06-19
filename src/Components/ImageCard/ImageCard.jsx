@@ -10,13 +10,13 @@ export default function ImageCard({ image, description, title }) {
       transition={{ duration: 2, ease: "easeInOut" }}
     >
       <div className="imageCard">
-        <img src={image} alt={`image${image}`} key={`image${image}`} />
+        <img src={image} alt={`${image}`} key={`image${image}`} />
         {description && (
           <div className="title-description">
             <span className="tittle">{title}</span>
             <div className="description">
-              {" "}
-              <span>{description}</span>
+            
+              <span className="img-card-span">{description}</span>
             </div>
           </div>
         )}

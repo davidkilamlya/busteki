@@ -12,10 +12,12 @@ import david from "../Assets/David.jpg";
 import backgroundimage2 from "../Assets/backgroundimage2.png";
 import backgroundimage3 from "../Assets/backgroundimage3.png";
 import backgroundimage8 from "../Assets/background8.jpg";
-import aboutus from "../Assets/aboutus.svg";
+import aboutus from "../Assets/about.svg";
 import contactus from "../Assets/contactus.svg";
+import icttraining from "../Assets/icttraining.svg";
+import notfound from "../Assets/notfound.svg";
 
-const images ={
+const images = {
   logo,
   banner1,
   banner2,
@@ -32,6 +34,8 @@ const images ={
   contactus,
   backgroundimage8,
   webdevelopment1,
+  icttraining,
+  notfound,
 };
 
-export default images
+export default images;

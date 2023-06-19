@@ -3,10 +3,12 @@ import "./NavBar.scss";
 import { images } from "../../Constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link,NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   const navList = [
-    "About us",
+    "Home",
+    "about us",
     "services",
     "Work",
     "update",
@@ -24,7 +26,7 @@ export const NavBar = () => {
         {navList.map((item) => (
           <li className="navbar_list_item" key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}> {item}</a>
+            <a href={`/#${item}`}> {item}</a>
           </li>
         ))}
       </ul>

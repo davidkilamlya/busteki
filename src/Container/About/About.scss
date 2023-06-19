@@ -16,6 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #040203;
+    font-weight: 600;
     // margin: 40px;
     width: 100%;
     height: 100%;
@@ -43,9 +45,16 @@
     div {
       width: 100%;
       height: 100%;
-      img {
-        width: 100%;
-        height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background-color: #a41e22;
+      .about-description-image {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50%;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top: none;

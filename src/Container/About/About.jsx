@@ -7,7 +7,7 @@ import Title from "../../Components/Title/Title";
 
 export default function About() {
   return (
-    <div className="About" id="About us">
+    <div className="About" id="about us">
       <Title title={"About Us"} visible />
 
       <div className="about-description">
@@ -43,12 +43,12 @@ export default function About() {
               the process of developing and owning ICT systems.
             </p>
           </div>
-          <div className="button">
+          <div className="about-button">
             <button>
-              <a href="/about">Read more</a>
+              <a href="/about" className="about-a">Read more</a>
             </button>
           </div>
-          <div className="horiline"></div>
+          
         </div>
       </div>
     </div>
