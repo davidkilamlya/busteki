@@ -1,0 +1,50 @@
+.home-div {
+  width: 100%;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-direction: column;
+  overflow: hidden;
+  position: sticky;
+  // height: 12vh;
+  top: 0;
+  z-index: 1;
+
+  .home-button {
+    // flex: 0.36;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .home-link-container {
+      background-color: darken($color: #6c63ff, $amount: 5%);
+
+      padding: 4px 20px;
+
+      .home {
+        color: var(--white-color);
+        text-decoration: none;
+      }
+      &:hover {
+        background-color: darken($color: #6c63ff, $amount: 10%);
+      }
+    }
+    .about-logo {
+      max-width: 200px;
+    }
+  }
+
+  .about-page-title-div {
+    display: flex;
+    // flex-direction: column;
+    // background-color: blue;
+    // flex: 0.64;
+
+    align-items: center;
+    justify-content: space-between;
+    // gap: 20px;
+    .about-page-subtitle {
+      font-size: 36px;
+    }
+  }
+}

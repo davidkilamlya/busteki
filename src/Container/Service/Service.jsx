@@ -4,11 +4,10 @@ import Title from "../../Components/Title/Title";
 import ImageCard from "../../Components/ImageCard/ImageCard";
 import { images } from "../../Constants";
 
-
 export default function Service() {
   return (
-    <div className="Service" id="services">
-      <Title title={"Features & Services"} visible />
+    <div className="Service">
+      <Title title={"Busteki Services"} id="services" visible />
 
       <div className="card_holder">
         <ImageCard
@@ -23,6 +22,13 @@ export default function Service() {
           title={"Mobile Apps Development"}
           description={
             "Our mobile app development services encompass the entire app development lifecycle, from conceptualization to deployment."
+          }
+        />
+        <ImageCard
+          image={images.marketing}
+          title={"Digital Marketing"}
+          description={
+            "In today's fast-paced digital landscape, establishing a robust online presence and connecting with your target audience is paramount to the success of your business. Busteki offers a comprehensive suite of digital marketing services designed to propel your brand to new heights in the digital realm."
           }
         />
         <ImageCard

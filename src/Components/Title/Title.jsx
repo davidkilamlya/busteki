@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Title.scss"
 
-function Title({title,visible}) {
+function Title({title,visible,id}) {
   return (
-    <div className='title'>
-      <h2>{title}</h2>
+    <div className='title' id={id}>
+      <h1>{title}</h1>
       {visible && (
         <div className="horiline"></div>
       )}

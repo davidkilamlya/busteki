@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.scss";
 import { images } from "../../Constants";
-import { motion } from "framer-motion";
-import ImageCard from "../../Components/ImageCard/ImageCard";
+import { LazyMotion, domAnimation, motion } from "framer-motion";
+
 import Title from "../../Components/Title/Title";
 
 export default function About() {
@@ -11,45 +11,85 @@ export default function About() {
       <Title title={"About Us"} visible />
 
       <div className="about-description">
-        <motion.div
-          // animate={{ x: [0, 100, 100, 0] }}
-          initial={{ x: [0, 100, 0], opacity: 0 }}
-          whileInView={{ x: [-300, 0], opacity: 1 }}
-          transition={{ duration: 2, ease: "easeInOut" }}
-        >
-          <img
-            src={images.aboutus}
-            alt="about_illustrate"
-            className="about-description-image"
-          />
-        </motion.div>
-        <div className="about-description-details">
-          <h1 className="about-tittle">Who we are</h1>
-          <div className="about-details">
-            <p>
-              BUSTEKI PROJECT is a groundbreaking initiative spearheaded by the
-              IAA Business Startup Center, a leading institution known for its
-              expertise in supporting small-scale entrepreneurs. With a mission
-              to catalyze a digital transformation in the field of ICT, the
-              project aims to empower institutions and budding entrepreneurs who
-              face financial barriers to owning essential ICT systems such as
-              websites and applications.
-            </p>
-            <p>
-              At BUSTEKI, we understand the significance of ICT for every
-              individual and its potential to drive growth and innovation in
-              businesses. Our project is dedicated to leveling the playing field
-              by offering accessible and cost-effective solutions that simplify
-              the process of developing and owning ICT systems.
-            </p>
-          </div>
-          <div className="about-button">
-            <button>
-              <a href="/about" className="about-a">Read more</a>
-            </button>
-          </div>
-          
-        </div>
+        <LazyMotion features={domAnimation}>
+          {window.screen.width > 360 ? (
+            <motion.div
+              initial={{ x: [300, 0], opacity: 0 }}
+              whileInView={{ x: [-300, 0], opacity: 1 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            >
+              <div className="about-description-details">
+                <h2 className="about-tittle">Who we are</h2>
+                <div className="about-details">
+                  <p>
+                    Busteki is a visionary technology startup founded by a team
+                    of passionate individuals with a shared goal: to democratize
+                    access to technology. We believe that everyone should have
+                    the opportunity to harness the power of digital innovation,
+                    regardless of their resources or technical expertise. The
+                    project aims to empower institutions and budding
+                    entrepreneurs who face financial barriers to owning
+                    essential ICT systems such as websites and applications.
+                  </p>
+                  <img src={images.handArrow} alt="" className="hand-arrow" />
+                  <p>
+                    At BUSTEKI, we understand the significance of ICT for every
+                    individual and its potential to drive growth and innovation
+                    in businesses. Our project is dedicated to leveling the
+                    playing field by offering accessible and cost-effective
+                    solutions that simplify the process of developing and owning
+                    ICT systems.
+                  </p>
+                </div>
+                <div className="about-button">
+                  <button>
+                    <a href="/about" className="about-a">
+                      Read more
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 2, ease: "easeInOut" }}
+            >
+              <div className="about-description-details">
+                <h2 className="about-tittle">Who we are</h2>
+                <div className="about-details">
+                  <p>
+                    Busteki is a visionary technology startup founded by a team
+                    of passionate individuals with a shared goal: to democratize
+                    access to technology. We believe that everyone should have
+                    the opportunity to harness the power of digital innovation,
+                    regardless of their resources or technical expertise. The
+                    project aims to empower institutions and budding
+                    entrepreneurs who face financial barriers to owning
+                    essential ICT systems such as websites and applications.
+                  </p>
+                  <img src={images.handArrow} alt="" className="hand-arrow" />
+                  <p>
+                    At BUSTEKI, we understand the significance of ICT for every
+                    individual and its potential to drive growth and innovation
+                    in businesses. Our project is dedicated to leveling the
+                    playing field by offering accessible and cost-effective
+                    solutions that simplify the process of developing and owning
+                    ICT systems.
+                  </p>
+                </div>
+                <div className="about-button">
+                  <button>
+                    <a href="/about" className="about-a">
+                      Read more
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </LazyMotion>
       </div>
     </div>
   );

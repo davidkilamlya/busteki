@@ -1,26 +1,97 @@
-.footer {
-  background-color: #2a2c41;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-// height: 100%;
-height: fit-content;
-  //   padding-top: 12vh;
-  @media screen and (max-width: 900) {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.footer-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+/* Footer.scss */
 
-  @media screen and (max-width: 900px) {
-    display: flex;
-    flex-direction: column;
-  }
+/* Style the footer container */
+.footer {
+  background-color:  #333;
+
+  color: white;
+  padding: 20px 0;
+}
+
+/* Style the footer content container */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Style the Busteki logo and text */
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: 50px;
+
+  // filter: grayscale(50%)  brightness(120%);
+}
+
+.footer-logo h3 {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+/* Style the footer links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+/* Style the Follow Us section */
+.footer-social {
+  text-align: center;
+}
+
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-social svg {
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-social svg:hover {
+  color: #007bff; /* Change social icon color on hover */
+}
+
+/* Style the footer bottom section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  margin: 0;
 }

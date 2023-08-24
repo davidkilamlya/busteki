@@ -2,6 +2,7 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
+  position: relative;
 }
 .slider-container-main {
   width: 100%;
@@ -14,21 +15,29 @@
   flex: 0 0 100%;
   width: 100%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .controlers {
-  opacity: 0.5;
+  width: 100%;
   width: 70px;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 40%;
-  left: 43%;
+  top: 90%;
+  left: 45%;
+  right: 0;
+  bottom: 0;
   gap: 20px;
+ 
 }
 .prev-slide {
+  opacity: 0.5;
+
+  cursor: pointer;
   color: white;
   background-color: black;
   width: fit-content;
@@ -38,8 +47,16 @@
   padding: 3px;
   font-weight: 700;
   border-radius: 50%;
+  &:hover{
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+  }
 }
 .next-slide {
+  opacity: 0.5;
+
+  cursor: pointer;
   color: white;
   background-color: black;
   width: fit-content;
@@ -48,4 +65,22 @@
   justify-content: center;
   padding: 3px;
   border-radius: 50%;
+  &:hover{
+    background-color: #fff;
+    color: #000;
+    opacity: 1;
+  }
+}
+.banner-title {
+  // background-color: red;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 50%;
+  //  transform: skewY(-12deg);
+  color: var(--secondary-color);
+  font-weight: 700;
+  width: 100%;
 }

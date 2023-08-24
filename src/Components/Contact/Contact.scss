@@ -1,0 +1,59 @@
+.contact {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: center;
+  background-color: #efefef;
+  gap: 40px;
+  // border-bottom: 1px solid #efefef;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+
+    gap: 20px;
+
+    width: 100%;
+    align-items: center;
+    .contact-social {
+      display: flex;
+      gap: 15px;
+      font-size: 17px;
+      .call,
+      .email {
+        text-decoration: none;
+        color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        .icon {
+          color: var(--secondary-color);
+        }
+      }
+      .contact-phone-email {
+        display: flex;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.facebook,
+.instagram,
+.call,
+.email {
+  cursor: pointer;
+}

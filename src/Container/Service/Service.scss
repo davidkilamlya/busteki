@@ -2,7 +2,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  height: max-content;
+  // height: max-content;
   align-items: center;
   flex-wrap: wrap;
   gap: 28px;
@@ -15,19 +15,9 @@
 
   border-radius: 5px;
 
-  // background: linear-gradient(
-  //   to right bottom,
-  //   #031544,
-  //   #1c3ca1,
-  //   #5b4c97,
-  //   #1c3ca1,
-  //   #031544,
-   
-  // );
+  
   background-color: var(--border-color);
-  // background-image:url("../../Assets/World\ Map.svg") ;
-  background-repeat: no-repeat;
-  // background-position-x: center;
+  
 
   background-size: cover;
   display: flex;
@@ -40,6 +30,7 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    // padding: 10px;
+    
   }
+ 
 }

@@ -57,7 +57,7 @@ function Slider() {
   }, [CurrentSlide]);
 
   return (
-    <div className="slider-main">
+    <div className="slider-main" id="Home">
       <div
         className="slider-container-main"
         style={{ transform: `translateX(-${CurrentSlide * 100}%)` }}
@@ -74,7 +74,9 @@ function Slider() {
                 backgroundSize: "cover",
               }}
               key={index}
-            ></div>
+            >
+              {/* <h1 className="banner-title">Hosting</h1> */}
+            </div>
           );
         })}
       </div>

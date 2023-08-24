@@ -1,4 +1,4 @@
-import React from "react";
+
 import Title from "../../Components/Title/Title";
 import "./ContactUs.scss";
 import { images } from "../../Constants";
@@ -12,15 +12,12 @@ function ContactUs() {
             <img src={images.contactus} alt="contactus" className="svg-image" />
           </div>
           <div className="contact-description">
-            <p className="pContact-description">
-              Get touch with us if you want to work with us or sponsoring this
-              project.
-            </p>
+            <h2 className="pContact-description">We are live 24/7 Hrs</h2>
           </div>
         </div>
         <div className="contact-form-title">
           <div className="contact-title">
-            <Title title={"contact us"} visible/>
+            <Title title={"contact us"} visible />
           </div>
           <div className="contact-form">
             <input
@@ -29,6 +26,13 @@ function ContactUs() {
               id="userName"
               className="userName input"
               placeholder="your name/company name"
+            />
+            <input
+              type="text"
+              name="userphone"
+              id="userEmail"
+              className="userEmail input"
+              placeholder="Your Phone number"
             />
             <input
               type="email"

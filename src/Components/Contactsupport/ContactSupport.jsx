@@ -6,7 +6,7 @@ import SinglepagePath  from "../Singlepage/SinglepagePath";
 
 function ContactSupport() {
   return (
-    <div className="container">
+    <div className="contactSupport-container">
       <SinglepagePath />
       <Title title={"Busteki/Contact support"} />
       <ContactUs />

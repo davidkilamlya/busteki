@@ -1,0 +1,26 @@
+.extslider-container {
+  background-color: red;
+  height: 40vh;
+  width: 100vw;
+  //   position: absolute;
+  transition: all 2s ease-in-out;
+  display: flex;
+  // overflow: hidden;
+}
+.slider-div {
+  height: 40vh;
+  min-width: 100%;
+  background-color: green;
+  object-fit: scale-down;
+  // overflow: hidden;
+  //   position: absolute;
+}
+.slider-image {
+  height: 110vh;
+  width: 100%;
+  object-fit: fill;
+  image-resolution: initial;
+  // overflow: hidden;
+
+  //   scale: 0.7;
+}

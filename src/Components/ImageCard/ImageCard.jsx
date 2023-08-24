@@ -2,14 +2,15 @@ import React from "react";
 import "./ImageCard.scss";
 import { motion } from "framer-motion";
 
-export default function ImageCard({ image, description, title }) {
+export default function ImageCard({ image, description, title, moreButton }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, x: [300, 0] }}
+      whileInView={{ opacity: 1 }}
       transition={{ duration: 2, ease: "easeInOut" }}
     >
       <div className="imageCard">
+        
         <img src={image} alt={`${image}`} key={`image${image}`} />
         {description && (
           <div className="title-description">
@@ -21,9 +22,10 @@ export default function ImageCard({ image, description, title }) {
           </div>
         )}
         <div>
-          <button>
+          
+          {/* <button>
             <a href="/services">Read More</a>
-          </button>
+          </button> */}
         </div>
       </div>
     </motion.div>

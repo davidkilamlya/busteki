@@ -1,0 +1,14 @@
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+  padding: 20px;
+}
+.contact-us-btn {
+  width: 40%;
+}
+.show-contact {
+  transition: all 2s ease-in-out;
+}

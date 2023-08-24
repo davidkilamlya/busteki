@@ -44,41 +44,7 @@ function ServiceProjects() {
 
   return (
     <div className="service-projects">
-      <SinglepagePath />
-      {/* <NavBar/> */}
-      <div className="main-service-projects-container">
-        <div className="service-container">
-          <Title title={"Busteki/Services"} visible />
-          <div className="services">
-            {servicesImagesdata.map((item, index) => {
-              return (
-                <div className="card-holder" key={index}>
-                  <div className="service-title">
-                    <h2 className="sevice-title-p">{item.name}</h2>
-                  </div>
-                  <div className="service-image">
-                    <img
-                      src={item.image}
-                      alt=""
-                      className="service-image-img"
-                    />
-                  </div>
-                  <div className="service-description">
-                    <p className="service-description-p">{item.description1}</p>
-                    <br />
-
-                    <p className="service-description-p">{item.description2}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-        <div className="project-container">
-          <Title title={"Busteki/Projects"} visible />
-          <div className="projects"></div>
-        </div>
-      </div>
+     
     </div>
   );
 }

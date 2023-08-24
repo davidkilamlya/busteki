@@ -13,20 +13,15 @@
   align-items: center;
 }
 .notfound-image{
-    animation-name: example;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-delay: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  position: relative;
-//     @keyframes example {
-    
+   
+  // position: relative;
+  max-width: 400px;
  
-//   0%  {background-color:var(--secondary-color); left:200px;}
-//   100%  {background-color:#fff; left:0px;}
-  
-// }
+  img{
+    width: 100%;
+  }
+
+
 }
 
 

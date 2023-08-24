@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import { images } from "../../Constants";
 import "./NotFound.scss";
 import { Link } from "react-router-dom";

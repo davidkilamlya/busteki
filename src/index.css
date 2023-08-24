@@ -1,31 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
+
 :root {
   --font-base: "DM Sans", sans-serif;
 
   --primary-color: #edf2f8;
   --secondary-color: #13104c;
-  --subsidiary-color:#A41E22;
+  --subsidiary-color: #a41e22;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
   --white-color: #ffffff;
-  --border-color:#F1F3F8;
-  --action-color:#10497E;
-  --additionalBackground--color:#EDF2F8;
-  --additionalBackgroundRed--color:#EC5252;
+  --border-color: #f1f3f8;
+  --action-color: #10497e;
+  --additionalBackground--color: #edf2f8;
+  --additionalBackgroundRed--color: #ec5252;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  /* font-family: 'Poppins', sans-serif; */
-  /* font-family: 'Abril Fatface', cursive; */
-/* font-family: 'Andika', sans-serif; */
-/* font-family: 'Abril Fatface', cursive;
- */
- /* font-family: 'Merriweather', serif; */
- font-family: 'Alegreya Sans', sans-serif;
-/* font-family: 'Arvo', serif; */
-  /* font-family: 'Abril Fatface', cursive; */
+
+font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0%;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  height: 10px;
+  width: 100vw;
+  
+  background-color: red;
+  transform-origin: 0%;
+  @media (max-width:480px) {
+    height: 5px;
+  }
+}
+
+#root{
+  overflow-x: hidden;
 }

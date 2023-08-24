@@ -1,0 +1,56 @@
+.side-contacts-container {
+  background-color: #6C63FF;
+  position: fixed;
+  top: 40%;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  animation-name: slide;
+  animation-timing-function: 10s;
+  animation-duration: 40s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  box-shadow: 0px 4px 8px rgba($color: #000000, $alpha: 0.1);
+  .side-contacts-div {
+    width: 100%;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .contact-icon-div {
+      width: 45px;
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      justify-content: center;
+
+      height: 45px;
+
+      .contact-icon-link {
+        font-size: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            fill: #fff;
+        }
+      }
+
+      &:hover {
+        border-radius: 50%;
+        background-color: #fff;
+        svg{
+            fill:#6C63FF;
+        }
+      }
+    }
+  }
+}
+
