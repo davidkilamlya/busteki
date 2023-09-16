@@ -100,7 +100,6 @@ function RequestPage() {
   const [isValidPhone, setIsValidPhone] = useState(false);
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [isValidName, setIsValidName] = useState(false);
-  const [isValidData, setIsValidData] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   //regex to validate data

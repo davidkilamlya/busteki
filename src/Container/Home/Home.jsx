@@ -21,8 +21,6 @@ function Home() {
 
   useEffect(() => {
     setTimeout(() => {
-      console.log(process.env.REACT_APP_END_POINT_CONTACT);
-      console.log(process.env.REACT_APP_END_POINT_SERVICE);
       setIsLoading(false);
     }, 2000);
   }, []);
