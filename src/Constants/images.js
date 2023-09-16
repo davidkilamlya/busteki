@@ -1,12 +1,7 @@
-import logo from "../Assets/busteki_official.svg";
-
+import logo from "../Assets/logosvg.svg";
 import webdev from "../Assets/webdev.svg";
 import webdevelopment1 from "../Assets/webdevelopment1.jpg";
-
 import appdev from "../Assets/appdev.svg"
-
-
-
 import contactus from "../Assets/contactus.svg";
 import icttraining from "../Assets/icttraining.svg";
 import notfound from "../Assets/notfound.svg";
@@ -24,15 +19,9 @@ import solution from "../Assets/solution.svg";
 
 const images = {
   logo,
- 
   webdev,
-
-  
-
-  
  appdev,
   contactus,
- 
   webdevelopment1,
   icttraining,
   notfound,

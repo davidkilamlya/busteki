@@ -15,10 +15,9 @@
 
   border-radius: 5px;
 
-  
-  background-color: var(--border-color);
-  
-
+  // background-color: var(--border-color);
+  background: rgb(19,16,76);
+background: linear-gradient(178deg, rgba(19,16,76,1) 0%, rgba(17,15,64,1) 1%, rgba(165,29,32,1) 82%);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -30,7 +29,5 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    
   }
- 
 }

@@ -1,6 +1,6 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { NavBar } from "../../Components/NavBar/NavBar";
-import Slider from "../../Components/Slider/Slider";
+
 import About from "../About/About";
 import Service from "../Service/Service";
 
@@ -10,43 +10,51 @@ import Footer from "../../Components/Footer/Footer";
 import "./Home.scss";
 import { Outlet } from "react-router-dom";
 
-import Contact from "../../Components/Contact/Contact";
 import Plan from "../../Components/Plan/Plan";
-import ScrollIndicator from "../../Components/ScrollIndicator/ScrollIndicator";
 import LeaveToUs from "../../Components/Leavetous/LeaveToUs";
 import { images } from "../../Constants";
-import SideContacts from "../../Components/SideContacts/SideContacts";
+
+import Loader from "../../Components/Loader/Loader";
 
 function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log(process.env.REACT_APP_END_POINT_CONTACT);
+      console.log(process.env.REACT_APP_END_POINT_SERVICE);
+      setIsLoading(false);
+    }, 2000);
+  }, []);
   return (
     <div className="Home">
+      {isLoading && <Loader />}
       <NavBar />
-      <Slider />
-      <ScrollIndicator />
-      <Contact />
       <LeaveToUs
         image={images.image23}
         url={"/request"}
         urlTitle={"Request Service"}
-        focusTitle={"Welcome To Busteki, We are Happy serve you"}
+        focusTitle={"Welcome To Busteki, We are Happy to serve you"}
         titleDescription={
           "We are always happy to see you are benefited from us, in Busteki customer is what comming first."
         }
       />
       <About />
+
       <LeaveToUs
         image={images.engineer}
         url={"/request"}
-        urlTitle={"Request request"}
+        urlTitle={"Request service"}
         focusTitle={"We are the Team of Professionals"}
         titleDescription={
           "We are Committed to make sure your Business, Institution move to the next level"
         }
       />
+
       <Service />
       <LeaveToUs
         image={images.solution}
-        urlTitle={"Request request"}
+        urlTitle={"Request service"}
         url={"/request"}
         focusTitle={"We are the Marketing solution for your business"}
         titleDescription={

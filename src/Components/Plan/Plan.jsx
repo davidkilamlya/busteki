@@ -15,12 +15,11 @@ const Parent = styled.div`
 const PlansSection = styled.section`
   display: flex;
   justify-content: space-around;
-  
+  perspective: 800px;
   padding: 40px;
   gap: 10px;
   background-color: #f8f8f8;
   flex-wrap: wrap;
-  
 `;
 
 const PlanCard = styled.div`
@@ -29,10 +28,12 @@ const PlanCard = styled.div`
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
+
   max-width: 300px;
   transition: all 0.5s ease-in-out;
   &:hover {
     scale: 1.1;
+    transform: rotateY(12deg);
   }
 `;
 

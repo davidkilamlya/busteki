@@ -1,0 +1,11 @@
+.disabled-button {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    &:hover{
+        background-color: gray;
+        color: white;
+        cursor: not-allowed;
+        
+    }
+  }

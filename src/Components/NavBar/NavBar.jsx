@@ -4,19 +4,19 @@ import { images } from "../../Constants";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
 import Contact from "../Contact/Contact";
+import { useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
-  const navList = [
-    "Home",
-    "about us",
-    "services",
-    "packages",
-    "Contact us",
-  ];
+  const navigate = useNavigate();
+  const navList = ["Home", "about us", "services", "packages", "Contact us"];
   const [toggle, setToggle] = useState(false);
+
+  const handleServiceNavigate = () => {
+    navigate("/request");
+  };
   return (
     <div className="nav-bar-contact">
-    <Contact/>
+      <Contact />
       <nav className="NavBar" id="home">
         <div className="navbar_logo">
           <img className="logo" src={images.logo} alt="busteki_logo" />
@@ -54,6 +54,11 @@ export const NavBar = () => {
               </motion.div>
             )}
           </AnimatePresence>
+        </div>
+        <div className="nav-service-button">
+          <button className="service-button" onClick={handleServiceNavigate}>
+            Request service
+          </button>
         </div>
       </nav>
     </div>

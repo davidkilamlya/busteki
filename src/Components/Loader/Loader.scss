@@ -1,0 +1,93 @@
+.loader-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  height: 100vh;
+  .loader-logo-text-div {
+    
+    .loader-logo {
+        max-height: 70px;
+        max-width: 200px;
+         animation: blink 0.9s linear infinite alternate;
+      }
+
+    .message {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      // width: 15vw;
+      padding: 5px;
+      span {
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+
+    .top-line {
+      animation: slideleft 0.9s linear infinite alternate;
+
+      width: 70px;
+      height: 2px;
+      border-bottom: 2px solid var(--subsidiary-color);
+    }
+
+    .bottom-line {
+      animation: slideright 0.9s linear infinite alternate;
+
+      width: 70px;
+      height: 2px;
+      border-bottom: 2px solid var(--secondary-color);
+    }
+  }
+}
+
+@keyframes slideleft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes slideright {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+
+    transform: translateX(100px);
+  }
+}
+
+@keyframes blink {
+  from {
+    //   filter: grayscale(100%);
+    opacity: 1;
+    scale: 0.8;
+  }
+  to {
+    //   filter: grayscale(0%);
+    opacity: 0.7;
+    scale: 1;
+  }
+}

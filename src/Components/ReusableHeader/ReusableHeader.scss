@@ -16,22 +16,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .home-link-container {
-      background-color: darken($color: #6c63ff, $amount: 5%);
-
-      padding: 4px 20px;
-
-      .home {
-        color: var(--white-color);
+    
+    .home {
+        color: #6c63ff;
         text-decoration: none;
+        &:hover {
+        color: darken($color: #6c63ff, $amount: 30%);
       }
-      &:hover {
-        background-color: darken($color: #6c63ff, $amount: 10%);
       }
+      
+    .home-logo{
+      width: 150px;
+      .about-logo {
+      max-width: 150px;
     }
-    .about-logo {
-      max-width: 200px;
     }
+    
   }
 
   .about-page-title-div {
